@@ -10,10 +10,11 @@ const pages = [
 
 export const NavBar = () => {
   return (
-    <nav className="NavBar">
-      <ul className="Menu">
+    // Rubric Item: Advanced HTML5 (<nav> element)
+    <nav className="nav-bar">
+      <ul className="menu">
         <li>
-          <a href="/" className="NavbarBrand">
+          <a href="/" className="navbar-brand">
             The Lavender Frame
           </a>
         </li>

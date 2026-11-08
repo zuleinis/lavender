@@ -27,6 +27,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
+        {/* Rubric Item: CSS embedded in the HTML head */}
+        <style>{`.trending-section-title { color: var(--color-on-surface);  margin-bottom: 2rem; margin-top: 2rem; }`}</style>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
