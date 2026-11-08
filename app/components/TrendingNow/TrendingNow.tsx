@@ -80,6 +80,7 @@ export const TrendingNow = () => {
           {trendingMovies.slice(1, 7).map((movie) => (
             <Grid key={movie.id} size={{ xs: 6, sm: 4, md: 2 }}>
               <PosterWithDetails
+                movieId={movie.id}
                 posterUrl={movie.posterUrl}
                 title={movie.title}
                 releaseDate={movie.release_date}
