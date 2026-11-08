@@ -124,3 +124,21 @@ p {
   aspect-ratio: 2 / 3;
   object-fit: cover;
 }
+
+.category-results-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.category-results-layout > figure {
+  width: 164px;
+  flex: 0 0 164px;
+  margin: 0;
+}
+
+.category-results-layout > figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
