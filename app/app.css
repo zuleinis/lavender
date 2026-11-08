@@ -1,15 +1,126 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-outfit: "Outfit", sans-serif;
 }
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+/* Rubric Item: External CSS Style Sheet */
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+:root {
+  --color-page: #090934;
+  --color-surface: #11103e;
+  --color-on-surface: #d1d1ff;
+  --color-primary: #b79cff;
+  --color-on-primary: #090934;
+  --color-secondary: #6559fb;
+  --color-accent: #80d5d2;
+
+  --font-size-h2: 32px;
+}
+
+html body {
+  font-family: var(--font-sans);
+  background-color: var(--color-page);
+  color: var(--color-on-surface);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-outfit);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 14px;
+}
+
+.nav-bar {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
   }
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: var(--font-outfit);
+  }
+}
+
+.page-container {
+  width: min(calc(100% - 2rem), 1200px);
+  margin-inline: auto;
+}
+
+.trending-now-first-movie {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.3fr)
+    minmax(220px, 0.7fr)
+    minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+
+  .trending-now-genres {
+    margin: 8px 8px 8px 0;
+  }
+
+  .trending-now-first-movie-details {
+    width: 100%;
+    max-width: 10rem;
+  }
+}
+
+.trending-now-first-movie > figure {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .trending-now-first-movie {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .trending-now-first-movie {
+    grid-template-columns: 1fr;
+  }
+}
+
+.trending-now-movie-list {
+  display: flex;
+  flex-direction: row;
+  align-items: middle;
+  justify-content: middle;
+  gap: 8px;
+}
+
+.movie-list-poster {
+  width: 164px;
+  height: 246px;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
 }
