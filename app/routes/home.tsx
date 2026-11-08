@@ -1,6 +1,5 @@
 import React from "react";
 import type { Route } from "./+types/home";
-import { NavBar } from "~/components/nav";
 import { TrendingNow } from "~/components/TrendingNow/TrendingNow";
 
 export function meta({}: Route.MetaArgs) {
@@ -13,7 +12,6 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <main>
-      <NavBar />
       <TrendingNow />
     </main>
   );

@@ -1,7 +1,5 @@
 import { Box, Grid } from "@mui/material";
 import React from "react";
-import { Link } from "react-router";
-import { NavBar } from "~/components/nav";
 import { PosterWithDetails } from "~/components/PosterWithDetails";
 import { mockDisplayAds } from "~/data/display-ads";
 import { movies } from "~/data/movies";
@@ -9,7 +7,6 @@ import { movies } from "~/data/movies";
 export default function Movies() {
   return (
     <main>
-      <NavBar />
       <div className="page-container">
         <h2 className="trending-section-title">All Movies</h2>
         <div className="category-results-layout">

@@ -1,5 +1,4 @@
 import React from "react";
-import { NavBar } from "~/components/nav";
 import { movies, streamingPlatformLinks } from "~/data/movies";
 import type { Route } from "./+types/movie-details";
 import { mockDisplayAds } from "~/data/display-ads";
@@ -16,7 +15,6 @@ export default function MovieDetails({ loaderData }: Route.ComponentProps) {
   const { movie } = loaderData;
   return (
     <main>
-      <NavBar />
       <div className="page-container movie-details-container">
         {/* Rubric Item: Image with alt text*/}
         <section>
@@ -29,14 +27,17 @@ export default function MovieDetails({ loaderData }: Route.ComponentProps) {
           <h2>Where to watch</h2>
           {movie.streamingPlatforms?.map((platform) => (
             // Rubric Item: External links
-            <a
-              key={platform}
-              href={streamingPlatformLinks[platform]}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {platform}
-            </a>
+            <div>
+              <a
+                key={platform}
+                href={streamingPlatformLinks[platform]}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {platform}
+              </a>
+              <br />
+            </div>
           ))}
         </section>
         <div className="movie-details-content">
