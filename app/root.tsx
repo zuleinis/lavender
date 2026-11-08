@@ -10,6 +10,9 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 
+import { CssBaseline, createTheme, ThemeProvider } from "@mui/material";
+import muiTheme from "../MuiTheme.json";
+
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
@@ -22,6 +25,20 @@ export const links: Route.LinksFunction = () => [
     href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap",
   },
 ];
+
+const colors = muiTheme.schemes.dark;
+
+const theme = createTheme({
+  palette: {
+    mode: "dark",
+    primary: { main: colors.primary, contrastText: colors.onPrimary },
+    secondary: { main: "#6559FB", contrastText: "#d1d1ff" },
+    background: { default: colors.background, paper: colors.surface },
+    text: { primary: colors.onSurface, secondary: colors.onSurfaceVariant },
+    error: { main: colors.error },
+    divider: colors.outlineVariant,
+  },
+});
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -44,7 +61,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Outlet />
+    </ThemeProvider>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
