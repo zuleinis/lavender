@@ -25,6 +25,7 @@ export default function Movies() {
                   size={{ xs: 6, sm: 4, md: 3, lg: 3, xl: 3 }}
                 >
                   <PosterWithDetails
+                    movieId={movie.id}
                     posterUrl={movie.posterUrl}
                     title={movie.title}
                     releaseDate={movie.release_date}

@@ -1,18 +1,21 @@
 import React from "react";
+import { Link } from "react-router";
 
 interface PosterWithDetailsProps {
+  movieId: number;
   posterUrl: string;
   title: string;
   releaseDate?: Date;
 }
 
 export const PosterWithDetails = ({
+  movieId,
   posterUrl,
   title,
   releaseDate,
 }: PosterWithDetailsProps) => {
   return (
-    <div>
+    <Link to={`/movie/${movieId}`}>
       {/* Rubric Item: Image with alt text (multiple*/}
       <img
         className="movie-list-poster"
@@ -31,6 +34,6 @@ export const PosterWithDetails = ({
           year: "numeric",
         })}
       </small>
-    </div>
+    </Link>
   );
 };

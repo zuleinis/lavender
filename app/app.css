@@ -142,3 +142,60 @@ p {
   width: 100%;
   height: auto;
 }
+
+.movie-details-poster {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.movie-details-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  gap: 24px;
+  align-items: flex-start;
+
+  .movie-details-content {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+
+    .movie-details-genres {
+      margin: 8px 8px 8px 0;
+    }
+  }
+}
+
+.movie-details-trailer {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+.movie-details-container > figure {
+  width: min(250px, 100%);
+  flex: 0 1 250px;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.movie-details-container > figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .movie-details-container {
+    flex-direction: column;
+  }
+
+  .movie-details-container > figure {
+    flex-basis: auto;
+  }
+}
