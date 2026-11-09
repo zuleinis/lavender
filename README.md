@@ -1,87 +1,44 @@
-# Welcome to React Router!
+# HCI 525 Project: The Lavender Frame
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A mock queer-cinema discovery site built with HTML, CSS, React, React Router, and MUI.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## Rubric Navigation
 
-## Features
+| Rubric area                                      | Relevant files                                                                                                                                                                                                                                     |
+| ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Page routes and internal navigation              | [Route configuration](app/routes.ts), [navbar](app/components/nav.tsx)                                                                                                                                                                             |
+| Home and trending movies                         | [Home route](app/routes/home.tsx), [Trending Now component](app/components/TrendingNow.tsx)                                                                                                                                                        |
+| Movies catalog and poster links                  | [Movies route](app/routes/movies.tsx), [Poster component](app/components/PosterWithDetails.tsx)                                                                                                                                                    |
+| Movie details, trailer, streaming links, reviews | [Movie details route](app/routes/movie-details.tsx), [movie data](app/data/movies.ts), [community comment data](app/data/community-comments.ts)                                                                                                    |
+| Profile and watchlist                            | [Profile route](app/routes/profile.tsx), [mock profile data](app/data/user-profile.ts)                                                                                                                                                             |
+| Additional pages                                 | [TV Shows](app/routes/tv-shows.tsx), [All](app/routes/all.tsx)                                                                                                                                                                                     |
+| Advanced HTML examples and formatting            | [Navbar](app/components/nav.tsx) (`nav`), [Trending Now](app/components/TrendingNow.tsx) (`section`, `iframe`, `figure`, `figcaption`), [movie details](app/routes/movie-details.tsx) (`section`, `iframe`, `strong`, `em`, `small`, `span`, `hr`) |
+| Images and alt text                              | [Poster component](app/components/PosterWithDetails.tsx), [display ads](app/data/display-ads.ts), [movies](app/data/movies.ts), [profile](app/routes/profile.tsx)                                                                                  |
+| Image captions and source links                  | [Home ad figure](app/components/TrendingNow.tsx), [catalog ad figure](app/routes/movies.tsx), [details ad figure](app/routes/movie-details.tsx)                                                                                                    |
+| External links                                   | [Streaming provider links](app/data/movies.ts), [movie details links](app/routes/movie-details.tsx), [image source links](app/components/TrendingNow.tsx)                                                                                          |
+| Inline, head, and external CSS examples          | [Inline styles](app/components/TrendingNow.tsx), [head style](app/root.tsx), [external stylesheet](app/app.css)                                                                                                                                    |
+| Theme colors                                     | [CSS variables and styles](app/app.css), [Material theme values](MuiTheme.json)                                                                                                                                                                    |
+| Shared page shell and footer                     | [Root layout](app/root.tsx), [Footer component](app/components/footer.tsx)                                                                                                                                                                         |
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## Pages
 
-## Getting Started
+- `/` - Home and featured trending movie
+- `/movies` - Movie catalog
+- `/movie/:movieId` - Movie details
+- `/profile` - Mock profile and watchlist
+- `/tv-shows` - Coming soon
+- `/all` - Coming soon
 
-### Installation
-
-Install the dependencies:
+## Run Locally
 
 ```bash
 npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
+Run the production checks with:
 
 ```bash
+npm run typecheck
 npm run build
 ```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.

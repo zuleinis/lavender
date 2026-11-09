@@ -1,6 +1,6 @@
 import React from "react";
 import type { Route } from "./+types/home";
-import { TrendingNow } from "~/components/TrendingNow/TrendingNow";
+import { TrendingNow } from "~/components/TrendingNow";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -11,6 +11,7 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
+    // Rubric Item: Advanced HTML5 (<main> element)
     <main>
       <TrendingNow />
     </main>
