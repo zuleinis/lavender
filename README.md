@@ -4,6 +4,8 @@ A mock queer-cinema discovery site built with HTML, CSS, React, React Router, an
 
 To find items relevant to the project rubric, see table below or search for "Rubric Item" in a text editor such as Visual Studio Code.
 
+The initial commit contains code from a [React Router starter](https://reactrouter.com/tutorials/quickstart). 
+
 ## Rubric Navigation
 
 | Rubric area                                      | Relevant files                                                                                                                                                                                                                                     |
