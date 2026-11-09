@@ -51,8 +51,10 @@ export enum StreamingPlatform {
 }
 
 export const streamingPlatformLinks: Record<StreamingPlatform, string> = {
-  [StreamingPlatform.AmazonPrimeVideo]: "https://www.amazon.com/gp/video/storefront/",
-  [StreamingPlatform.AmazonVideo]: "https://www.amazon.com/gp/video/storefront/",
+  [StreamingPlatform.AmazonPrimeVideo]:
+    "https://www.amazon.com/gp/video/storefront/",
+  [StreamingPlatform.AmazonVideo]:
+    "https://www.amazon.com/gp/video/storefront/",
   [StreamingPlatform.AppleTV]: "https://tv.apple.com/us",
   [StreamingPlatform.FandangoAtHome]: "https://athome.fandango.com/",
   [StreamingPlatform.HBOMax]: "https://www.max.com/",
@@ -95,10 +97,27 @@ export const movies: Movie[] = [
     vote_average: 7.4,
     rating: ContentRating.R,
     runtimeMinutes: 111,
-    streamingPlatforms: [StreamingPlatform.Netflix, StreamingPlatform.Tubi, StreamingPlatform.Kanopy, StreamingPlatform.Hoopla],
+    streamingPlatforms: [
+      StreamingPlatform.Netflix,
+      StreamingPlatform.Tubi,
+      StreamingPlatform.Kanopy,
+      StreamingPlatform.Hoopla,
+    ],
     comments: [
-      createComment(1, 1, 0, "2025-02-14T19:24:00Z", "The three chapters make this feel like a whole life held in one film."),
-      createComment(1, 2, 1, "2025-06-03T08:12:00Z", "The color and music stayed with me long after the credits."),
+      createComment(
+        1,
+        1,
+        0,
+        "2025-02-14T19:24:00Z",
+        "The three chapters make this feel like a whole life held in one film.",
+      ),
+      createComment(
+        1,
+        2,
+        1,
+        "2025-06-03T08:12:00Z",
+        "The color and music stayed with me long after the credits.",
+      ),
     ],
     posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=Moonlight",
     trailerUrl: "https://www.youtube.com/embed/9NJj12tJzqc",
@@ -115,13 +134,30 @@ export const movies: Movie[] = [
     vote_average: 7.5,
     rating: ContentRating.R,
     runtimeMinutes: 118,
-    streamingPlatforms: [StreamingPlatform.AmazonPrimeVideo, StreamingPlatform.Tubi, StreamingPlatform.Kanopy, StreamingPlatform.Hoopla],
+    streamingPlatforms: [
+      StreamingPlatform.AmazonPrimeVideo,
+      StreamingPlatform.Tubi,
+      StreamingPlatform.Kanopy,
+      StreamingPlatform.Hoopla,
+    ],
     comments: [
-      createComment(2, 1, 2, "2025-01-21T17:08:00Z", "So much is said in the quiet pauses between them."),
-      createComment(2, 2, 3, "2025-07-12T21:40:00Z", "The costumes and winter atmosphere are gorgeous."),
+      createComment(
+        2,
+        1,
+        2,
+        "2025-01-21T17:08:00Z",
+        "So much is said in the quiet pauses between them.",
+      ),
+      createComment(
+        2,
+        2,
+        3,
+        "2025-07-12T21:40:00Z",
+        "The costumes and winter atmosphere are gorgeous.",
+      ),
     ],
     posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=Carol",
-    trailerUrl: "https://www.youtube.com/embed/VJzGd9n4T7Q",
+    trailerUrl: "https://www.youtube.com/embed/FdD32njnvDs",
   },
   {
     id: 3,
@@ -135,13 +171,29 @@ export const movies: Movie[] = [
     vote_average: 7.7,
     rating: ContentRating.R,
     runtimeMinutes: 120,
-    streamingPlatforms: [StreamingPlatform.YouTube, StreamingPlatform.Kanopy, StreamingPlatform.Hoopla],
+    streamingPlatforms: [
+      StreamingPlatform.YouTube,
+      StreamingPlatform.Kanopy,
+      StreamingPlatform.Hoopla,
+    ],
     comments: [
-      createComment(3, 1, 4, "2025-03-08T14:35:00Z", "A warm reminder that solidarity can start with unlikely allies."),
-      createComment(3, 2, 5, "2025-08-19T10:16:00Z", "Funny, moving, and based on such a memorable piece of history."),
+      createComment(
+        3,
+        1,
+        4,
+        "2025-03-08T14:35:00Z",
+        "A warm reminder that solidarity can start with unlikely allies.",
+      ),
+      createComment(
+        3,
+        2,
+        5,
+        "2025-08-19T10:16:00Z",
+        "Funny, moving, and based on such a memorable piece of history.",
+      ),
     ],
     posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=Pride",
-    trailerUrl: "https://www.youtube.com/embed/1L7UO2JYw5M",
+    trailerUrl: "https://www.youtube.com/embed/kZfFvsKDuUU",
   },
   {
     id: 4,
@@ -157,11 +209,24 @@ export const movies: Movie[] = [
     runtimeMinutes: 145,
     streamingPlatforms: [StreamingPlatform.AmazonPrimeVideo],
     comments: [
-      createComment(4, 1, 0, "2025-02-26T20:01:00Z", "Every detail feels deliberate. I wanted to revisit it immediately."),
-      createComment(4, 2, 1, "2025-09-04T16:22:00Z", "The shifting point of view kept me completely engaged."),
+      createComment(
+        4,
+        1,
+        0,
+        "2025-02-26T20:01:00Z",
+        "Every detail feels deliberate. I wanted to revisit it immediately.",
+      ),
+      createComment(
+        4,
+        2,
+        1,
+        "2025-09-04T16:22:00Z",
+        "The shifting point of view kept me completely engaged.",
+      ),
     ],
-    posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=The+Handmaiden",
-    trailerUrl: "https://www.youtube.com/embed/F4gI-8yBq1I",
+    posterUrl:
+      "https://placehold.co/500x750/d1d1ff/090934.png?text=The+Handmaiden",
+    trailerUrl: "https://www.youtube.com/embed/vHOmrolJEiY",
   },
   {
     id: 5,
@@ -177,11 +242,24 @@ export const movies: Movie[] = [
     runtimeMinutes: 121,
     streamingPlatforms: [StreamingPlatform.HBOMax, StreamingPlatform.Kanopy],
     comments: [
-      createComment(5, 1, 2, "2025-01-30T12:50:00Z", "The paintings, glances, and silences all feel connected."),
-      createComment(5, 2, 3, "2025-10-11T18:43:00Z", "That final scene is one I keep thinking about."),
+      createComment(
+        5,
+        1,
+        2,
+        "2025-01-30T12:50:00Z",
+        "The paintings, glances, and silences all feel connected.",
+      ),
+      createComment(
+        5,
+        2,
+        3,
+        "2025-10-11T18:43:00Z",
+        "That final scene is one I keep thinking about.",
+      ),
     ],
-    posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=Portrait+of+a+Lady+on+Fire",
-    trailerUrl: "https://www.youtube.com/embed/Ztr0tQMtfkA",
+    posterUrl:
+      "https://placehold.co/500x750/d1d1ff/090934.png?text=Portrait+of+a+Lady+on+Fire",
+    trailerUrl: "https://www.youtube.com/embed/R-fQPTwma9o",
   },
   {
     id: 6,
@@ -197,11 +275,24 @@ export const movies: Movie[] = [
     runtimeMinutes: 85,
     streamingPlatforms: [StreamingPlatform.AmazonVideo, StreamingPlatform.Tubi],
     comments: [
-      createComment(6, 1, 4, "2025-03-19T09:05:00Z", "The bright look makes the story's sharp humor land even harder."),
-      createComment(6, 2, 5, "2025-11-02T22:17:00Z", "A cult classic with a lot of heart underneath the comedy."),
+      createComment(
+        6,
+        1,
+        4,
+        "2025-03-19T09:05:00Z",
+        "The bright look makes the story's sharp humor land even harder.",
+      ),
+      createComment(
+        6,
+        2,
+        5,
+        "2025-11-02T22:17:00Z",
+        "A cult classic with a lot of heart underneath the comedy.",
+      ),
     ],
-    posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=But+I%27m+a+Cheerleader",
-    trailerUrl: "https://www.youtube.com/embed/7H1U6l3qz7E",
+    posterUrl:
+      "https://placehold.co/500x750/d1d1ff/090934.png?text=But+I%27m+a+Cheerleader",
+    trailerUrl: "https://www.youtube.com/embed/YUsGJb4ea7E",
   },
   {
     id: 7,
@@ -215,13 +306,28 @@ export const movies: Movie[] = [
     vote_average: 7.3,
     rating: ContentRating.NotRated,
     runtimeMinutes: 96,
-    streamingPlatforms: [StreamingPlatform.AmazonVideo, StreamingPlatform.AppleTV],
+    streamingPlatforms: [
+      StreamingPlatform.AmazonVideo,
+      StreamingPlatform.AppleTV,
+    ],
     comments: [
-      createComment(7, 1, 0, "2025-04-04T13:38:00Z", "It captures how a short connection can still change your perspective."),
-      createComment(7, 2, 1, "2025-11-16T19:52:00Z", "The natural conversations make the relationship feel so close."),
+      createComment(
+        7,
+        1,
+        0,
+        "2025-04-04T13:38:00Z",
+        "It captures how a short connection can still change your perspective.",
+      ),
+      createComment(
+        7,
+        2,
+        1,
+        "2025-11-16T19:52:00Z",
+        "The natural conversations make the relationship feel so close.",
+      ),
     ],
     posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=Weekend",
-    trailerUrl: "https://www.youtube.com/embed/E5L5nVT3qHo",
+    trailerUrl: "https://www.youtube.com/embed/2IFbcWG1F9o",
   },
   {
     id: 8,
@@ -235,13 +341,28 @@ export const movies: Movie[] = [
     vote_average: 7.1,
     rating: ContentRating.NotRated,
     runtimeMinutes: 83,
-    streamingPlatforms: [StreamingPlatform.Netflix, StreamingPlatform.AmazonVideo],
+    streamingPlatforms: [
+      StreamingPlatform.Netflix,
+      StreamingPlatform.AmazonVideo,
+    ],
     comments: [
-      createComment(8, 1, 2, "2025-02-09T15:11:00Z", "Their joy together is lovely, even with all the pressure around them."),
-      createComment(8, 2, 3, "2025-12-01T08:34:00Z", "I appreciated seeing a love story grounded in Nairobi."),
+      createComment(
+        8,
+        1,
+        2,
+        "2025-02-09T15:11:00Z",
+        "Their joy together is lovely, even with all the pressure around them.",
+      ),
+      createComment(
+        8,
+        2,
+        3,
+        "2025-12-01T08:34:00Z",
+        "I appreciated seeing a love story grounded in Nairobi.",
+      ),
     ],
     posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=Rafiki",
-    trailerUrl: "https://www.youtube.com/embed/Q1W1M4v3dVQ",
+    trailerUrl: "https://www.youtube.com/embed/hRScuC_TkME",
   },
   {
     id: 9,
@@ -257,11 +378,24 @@ export const movies: Movie[] = [
     runtimeMinutes: 90,
     streamingPlatforms: [StreamingPlatform.Kanopy, StreamingPlatform.Hoopla],
     comments: [
-      createComment(9, 1, 4, "2025-04-16T17:59:00Z", "The film-within-a-film idea gives the story such a personal voice."),
-      createComment(9, 2, 5, "2025-12-13T20:26:00Z", "I love how it connects queer history with the filmmaker's own life."),
+      createComment(
+        9,
+        1,
+        4,
+        "2025-04-16T17:59:00Z",
+        "The film-within-a-film idea gives the story such a personal voice.",
+      ),
+      createComment(
+        9,
+        2,
+        5,
+        "2025-12-13T20:26:00Z",
+        "I love how it connects queer history with the filmmaker's own life.",
+      ),
     ],
-    posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=The+Watermelon+Woman",
-    trailerUrl: "https://www.youtube.com/embed/1uNnkVd3rJQ",
+    posterUrl:
+      "https://placehold.co/500x750/d1d1ff/090934.png?text=The+Watermelon+Woman",
+    trailerUrl: "https://www.youtube.com/embed/mtU6Wo29VXI",
   },
   {
     id: 10,
@@ -275,13 +409,28 @@ export const movies: Movie[] = [
     vote_average: 7.2,
     rating: ContentRating.R,
     runtimeMinutes: 109,
-    streamingPlatforms: [StreamingPlatform.AmazonVideo, StreamingPlatform.AppleTV],
+    streamingPlatforms: [
+      StreamingPlatform.AmazonVideo,
+      StreamingPlatform.AppleTV,
+    ],
     comments: [
-      createComment(10, 1, 0, "2025-05-06T11:42:00Z", "A tense crime story with a compelling central relationship."),
-      createComment(10, 2, 1, "2025-12-20T14:07:00Z", "The chemistry and the clever plan make this a fun rewatch."),
+      createComment(
+        10,
+        1,
+        0,
+        "2025-05-06T11:42:00Z",
+        "A tense crime story with a compelling central relationship.",
+      ),
+      createComment(
+        10,
+        2,
+        1,
+        "2025-12-20T14:07:00Z",
+        "The chemistry and the clever plan make this a fun rewatch.",
+      ),
     ],
     posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=Bound",
-    trailerUrl: "https://www.youtube.com/embed/FjF7N4GJc5g",
+    trailerUrl: "https://www.youtube.com/embed/WHBmxInOC4E",
   },
   {
     id: 11,
@@ -297,11 +446,24 @@ export const movies: Movie[] = [
     runtimeMinutes: 110,
     streamingPlatforms: [StreamingPlatform.DisneyPlus, StreamingPlatform.Hulu],
     comments: [
-      createComment(11, 1, 2, "2025-03-02T16:19:00Z", "A sweet coming-out story that feels easy to recommend."),
-      createComment(11, 2, 3, "2026-01-08T19:33:00Z", "The mystery gives the romance a playful little hook."),
+      createComment(
+        11,
+        1,
+        2,
+        "2025-03-02T16:19:00Z",
+        "A sweet coming-out story that feels easy to recommend.",
+      ),
+      createComment(
+        11,
+        2,
+        3,
+        "2026-01-08T19:33:00Z",
+        "The mystery gives the romance a playful little hook.",
+      ),
     ],
-    posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=Love%2C+Simon",
-    trailerUrl: "https://www.youtube.com/embed/QAEg0xR4uDk",
+    posterUrl:
+      "https://placehold.co/500x750/d1d1ff/090934.png?text=Love%2C+Simon",
+    trailerUrl: "https://www.youtube.com/embed/ykHeGtN4m94",
   },
   {
     id: 12,
@@ -317,11 +479,24 @@ export const movies: Movie[] = [
     runtimeMinutes: 91,
     streamingPlatforms: [StreamingPlatform.Hulu, StreamingPlatform.AmazonVideo],
     comments: [
-      createComment(12, 1, 4, "2025-05-21T10:48:00Z", "The friendships at the center give the story real tenderness."),
-      createComment(12, 2, 5, "2026-01-17T22:04:00Z", "A difficult subject handled through the teens' own points of view."),
+      createComment(
+        12,
+        1,
+        4,
+        "2025-05-21T10:48:00Z",
+        "The friendships at the center give the story real tenderness.",
+      ),
+      createComment(
+        12,
+        2,
+        5,
+        "2026-01-17T22:04:00Z",
+        "A difficult subject handled through the teens' own points of view.",
+      ),
     ],
-    posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=Cameron+Post",
-    trailerUrl: "https://www.youtube.com/embed/E0A7X0_rnt8",
+    posterUrl:
+      "https://placehold.co/500x750/d1d1ff/090934.png?text=Cameron+Post",
+    trailerUrl: "https://www.youtube.com/embed/j1dzhiPEYEs",
   },
   {
     id: 13,
@@ -335,13 +510,29 @@ export const movies: Movie[] = [
     vote_average: 7.1,
     rating: ContentRating.R,
     runtimeMinutes: 104,
-    streamingPlatforms: [StreamingPlatform.Netflix, StreamingPlatform.AmazonVideo],
-    comments: [
-      createComment(13, 1, 0, "2025-06-12T13:14:00Z", "A moving portrait that keeps Marina's dignity at the center."),
-      createComment(13, 2, 1, "2026-02-03T18:56:00Z", "The lead performance is subtle and deeply affecting."),
+    streamingPlatforms: [
+      StreamingPlatform.Netflix,
+      StreamingPlatform.AmazonVideo,
     ],
-    posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=A+Fantastic+Woman",
-    trailerUrl: "https://www.youtube.com/embed/FXeiyM3N7dI",
+    comments: [
+      createComment(
+        13,
+        1,
+        0,
+        "2025-06-12T13:14:00Z",
+        "A moving portrait that keeps Marina's dignity at the center.",
+      ),
+      createComment(
+        13,
+        2,
+        1,
+        "2026-02-03T18:56:00Z",
+        "The lead performance is subtle and deeply affecting.",
+      ),
+    ],
+    posterUrl:
+      "https://placehold.co/500x750/d1d1ff/090934.png?text=A+Fantastic+Woman",
+    trailerUrl: "https://www.youtube.com/embed/IKsSyp4m_6o",
   },
   {
     id: 14,
@@ -355,13 +546,29 @@ export const movies: Movie[] = [
     vote_average: 7.7,
     rating: ContentRating.R,
     runtimeMinutes: 119,
-    streamingPlatforms: [StreamingPlatform.HBOMax, StreamingPlatform.AmazonVideo],
-    comments: [
-      createComment(14, 1, 2, "2025-06-29T20:13:00Z", "The court politics are ridiculous in the best possible way."),
-      createComment(14, 2, 3, "2026-02-18T09:41:00Z", "Olivia Colman's performance makes every scene fascinating."),
+    streamingPlatforms: [
+      StreamingPlatform.HBOMax,
+      StreamingPlatform.AmazonVideo,
     ],
-    posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=The+Favourite",
-    trailerUrl: "https://www.youtube.com/embed/KZsUrVm5z4g",
+    comments: [
+      createComment(
+        14,
+        1,
+        2,
+        "2025-06-29T20:13:00Z",
+        "The court politics are ridiculous in the best possible way.",
+      ),
+      createComment(
+        14,
+        2,
+        3,
+        "2026-02-18T09:41:00Z",
+        "Olivia Colman's performance makes every scene fascinating.",
+      ),
+    ],
+    posterUrl:
+      "https://placehold.co/500x750/d1d1ff/090934.png?text=The+Favourite",
+    trailerUrl: "https://www.youtube.com/embed/ZtYvgf1UB4Y",
   },
   {
     id: 15,
@@ -375,13 +582,29 @@ export const movies: Movie[] = [
     vote_average: 7.7,
     rating: ContentRating.R,
     runtimeMinutes: 105,
-    streamingPlatforms: [StreamingPlatform.HBOMax, StreamingPlatform.AmazonVideo],
-    comments: [
-      createComment(15, 1, 4, "2025-07-04T15:30:00Z", "The mix of grief, memory, and romance hit me unexpectedly hard."),
-      createComment(15, 2, 5, "2026-03-01T21:15:00Z", "Quiet and dreamlike, with a really beautiful central connection."),
+    streamingPlatforms: [
+      StreamingPlatform.HBOMax,
+      StreamingPlatform.AmazonVideo,
     ],
-    posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=All+of+Us+Strangers",
-    trailerUrl: "https://www.youtube.com/embed/8RlkI5q6z6w",
+    comments: [
+      createComment(
+        15,
+        1,
+        4,
+        "2025-07-04T15:30:00Z",
+        "The mix of grief, memory, and romance hit me unexpectedly hard.",
+      ),
+      createComment(
+        15,
+        2,
+        5,
+        "2026-03-01T21:15:00Z",
+        "Quiet and dreamlike, with a really beautiful central connection.",
+      ),
+    ],
+    posterUrl:
+      "https://placehold.co/500x750/d1d1ff/090934.png?text=All+of+Us+Strangers",
+    trailerUrl: "https://www.youtube.com/embed/7ASCWvea238",
   },
   {
     id: 16,
@@ -395,13 +618,28 @@ export const movies: Movie[] = [
     vote_average: 6.7,
     rating: ContentRating.NotRated,
     runtimeMinutes: 105,
-    streamingPlatforms: [StreamingPlatform.Kanopy, StreamingPlatform.AmazonVideo],
+    streamingPlatforms: [
+      StreamingPlatform.Kanopy,
+      StreamingPlatform.AmazonVideo,
+    ],
     comments: [
-      createComment(16, 1, 0, "2025-07-22T12:06:00Z", "I liked how the story leaves room for uncertainty and interpretation."),
-      createComment(16, 2, 1, "2026-03-14T17:28:00Z", "A small, intimate film that rewards a patient watch."),
+      createComment(
+        16,
+        1,
+        0,
+        "2025-07-22T12:06:00Z",
+        "I liked how the story leaves room for uncertainty and interpretation.",
+      ),
+      createComment(
+        16,
+        2,
+        1,
+        "2026-03-14T17:28:00Z",
+        "A small, intimate film that rewards a patient watch.",
+      ),
     ],
     posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=Giulia",
-    trailerUrl: "https://www.youtube.com/embed/HfZ7D8IWUUI",
+    trailerUrl: "https://www.youtube.com/embed/BQ8544BoMeI",
   },
   {
     id: 17,
@@ -415,13 +653,29 @@ export const movies: Movie[] = [
     vote_average: 6.8,
     rating: ContentRating.R,
     runtimeMinutes: 106,
-    streamingPlatforms: [StreamingPlatform.HBOMax, StreamingPlatform.AmazonVideo],
-    comments: [
-      createComment(17, 1, 2, "2025-08-05T14:44:00Z", "The family feels messy and believable in a way I appreciated."),
-      createComment(17, 2, 3, "2026-03-28T20:02:00Z", "A funny, grounded take on relationships and parenthood."),
+    streamingPlatforms: [
+      StreamingPlatform.HBOMax,
+      StreamingPlatform.AmazonVideo,
     ],
-    posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=The+Kids+Are+All+Right",
-    trailerUrl: "https://www.youtube.com/embed/R1I2jRx2D7s",
+    comments: [
+      createComment(
+        17,
+        1,
+        2,
+        "2025-08-05T14:44:00Z",
+        "The family feels messy and believable in a way I appreciated.",
+      ),
+      createComment(
+        17,
+        2,
+        3,
+        "2026-03-28T20:02:00Z",
+        "A funny, grounded take on relationships and parenthood.",
+      ),
+    ],
+    posterUrl:
+      "https://placehold.co/500x750/d1d1ff/090934.png?text=The+Kids+Are+All+Right",
+    trailerUrl: "https://www.youtube.com/embed/RixlpHKfb6M",
   },
   {
     id: 18,
@@ -435,13 +689,29 @@ export const movies: Movie[] = [
     vote_average: 6.4,
     rating: ContentRating.NotRated,
     runtimeMinutes: 102,
-    streamingPlatforms: [StreamingPlatform.AmazonVideo, StreamingPlatform.AppleTV],
-    comments: [
-      createComment(18, 1, 4, "2025-08-23T18:20:00Z", "The farm setting makes the tension feel almost inescapable."),
-      createComment(18, 2, 5, "2026-04-09T11:36:00Z", "Unsettling, intimate, and full of complicated silences."),
+    streamingPlatforms: [
+      StreamingPlatform.AmazonVideo,
+      StreamingPlatform.AppleTV,
     ],
-    posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=Tom+at+the+Farm",
-    trailerUrl: "https://www.youtube.com/embed/lQl0Q7IPx6Q",
+    comments: [
+      createComment(
+        18,
+        1,
+        4,
+        "2025-08-23T18:20:00Z",
+        "The farm setting makes the tension feel almost inescapable.",
+      ),
+      createComment(
+        18,
+        2,
+        5,
+        "2026-04-09T11:36:00Z",
+        "Unsettling, intimate, and full of complicated silences.",
+      ),
+    ],
+    posterUrl:
+      "https://placehold.co/500x750/d1d1ff/090934.png?text=Tom+at+the+Farm",
+    trailerUrl: "https://www.youtube.com/embed/rZNzJhTczZQ",
   },
   {
     id: 19,
@@ -455,13 +725,29 @@ export const movies: Movie[] = [
     vote_average: 6.6,
     rating: ContentRating.R,
     runtimeMinutes: 97,
-    streamingPlatforms: [StreamingPlatform.AmazonVideo, StreamingPlatform.AppleTV],
-    comments: [
-      createComment(19, 1, 0, "2025-09-07T10:29:00Z", "The awkward humor makes the romance feel refreshingly human."),
-      createComment(19, 2, 1, "2026-04-22T16:53:00Z", "A charming early-2000s indie with a lot of personality."),
+    streamingPlatforms: [
+      StreamingPlatform.AmazonVideo,
+      StreamingPlatform.AppleTV,
     ],
-    posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=Kissing+Jessica+Stein",
-    trailerUrl: "https://www.youtube.com/embed/8A6r3v8f4Q4",
+    comments: [
+      createComment(
+        19,
+        1,
+        0,
+        "2025-09-07T10:29:00Z",
+        "The awkward humor makes the romance feel refreshingly human.",
+      ),
+      createComment(
+        19,
+        2,
+        1,
+        "2026-04-22T16:53:00Z",
+        "A charming early-2000s indie with a lot of personality.",
+      ),
+    ],
+    posterUrl:
+      "https://placehold.co/500x750/d1d1ff/090934.png?text=Kissing+Jessica+Stein",
+    trailerUrl: "https://www.youtube.com/embed/NaPqnezhXT8",
   },
   {
     id: 20,
@@ -475,13 +761,29 @@ export const movies: Movie[] = [
     vote_average: 6.5,
     rating: ContentRating.R,
     runtimeMinutes: 114,
-    streamingPlatforms: [StreamingPlatform.HBOMax, StreamingPlatform.AmazonVideo],
-    comments: [
-      createComment(20, 1, 2, "2025-09-19T13:47:00Z", "The emotional history between the characters is palpable."),
-      createComment(20, 2, 3, "2026-05-06T19:08:00Z", "Beautifully acted, especially in the quieter scenes."),
+    streamingPlatforms: [
+      StreamingPlatform.HBOMax,
+      StreamingPlatform.AmazonVideo,
     ],
-    posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=Disobedience",
-    trailerUrl: "https://www.youtube.com/embed/Ife0UW8t4dY",
+    comments: [
+      createComment(
+        20,
+        1,
+        2,
+        "2025-09-19T13:47:00Z",
+        "The emotional history between the characters is palpable.",
+      ),
+      createComment(
+        20,
+        2,
+        3,
+        "2026-05-06T19:08:00Z",
+        "Beautifully acted, especially in the quieter scenes.",
+      ),
+    ],
+    posterUrl:
+      "https://placehold.co/500x750/d1d1ff/090934.png?text=Disobedience",
+    trailerUrl: "https://www.youtube.com/embed/QxAWE-XtWhA",
   },
   {
     id: 21,
@@ -495,13 +797,30 @@ export const movies: Movie[] = [
     vote_average: 6.7,
     rating: ContentRating.PG13,
     runtimeMinutes: 91,
-    streamingPlatforms: [StreamingPlatform.AmazonVideo, StreamingPlatform.AppleTV, StreamingPlatform.Kanopy],
-    comments: [
-      createComment(21, 1, 4, "2025-10-03T17:21:00Z", "The family and cultural dynamics make this more than a romance."),
-      createComment(21, 2, 5, "2026-05-18T08:57:00Z", "Warm, funny, and still one of my favorite comfort watches."),
+    streamingPlatforms: [
+      StreamingPlatform.AmazonVideo,
+      StreamingPlatform.AppleTV,
+      StreamingPlatform.Kanopy,
     ],
-    posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=Saving+Face",
-    trailerUrl: "https://www.youtube.com/embed/3Gv8j2N0eNQ",
+    comments: [
+      createComment(
+        21,
+        1,
+        4,
+        "2025-10-03T17:21:00Z",
+        "The family and cultural dynamics make this more than a romance.",
+      ),
+      createComment(
+        21,
+        2,
+        5,
+        "2026-05-18T08:57:00Z",
+        "Warm, funny, and still one of my favorite comfort watches.",
+      ),
+    ],
+    posterUrl:
+      "https://placehold.co/500x750/d1d1ff/090934.png?text=Saving+Face",
+    trailerUrl: "https://www.youtube.com/embed/HF6rNrh60hI",
   },
   {
     id: 22,
@@ -515,13 +834,29 @@ export const movies: Movie[] = [
     vote_average: 6.3,
     rating: ContentRating.NotRated,
     runtimeMinutes: 108,
-    streamingPlatforms: [StreamingPlatform.HBOMax, StreamingPlatform.AmazonVideo],
-    comments: [
-      createComment(22, 1, 0, "2025-10-21T20:33:00Z", "The story keeps shifting in ways that made me rethink my assumptions."),
-      createComment(22, 2, 1, "2026-06-02T14:12:00Z", "A strange, thoughtful film about identity and reinvention."),
+    streamingPlatforms: [
+      StreamingPlatform.HBOMax,
+      StreamingPlatform.AmazonVideo,
     ],
-    posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=The+New+Girlfriend",
-    trailerUrl: "https://www.youtube.com/embed/5HR74E7h3vU",
+    comments: [
+      createComment(
+        22,
+        1,
+        0,
+        "2025-10-21T20:33:00Z",
+        "The story keeps shifting in ways that made me rethink my assumptions.",
+      ),
+      createComment(
+        22,
+        2,
+        1,
+        "2026-06-02T14:12:00Z",
+        "A strange, thoughtful film about identity and reinvention.",
+      ),
+    ],
+    posterUrl:
+      "https://placehold.co/500x750/d1d1ff/090934.png?text=The+New+Girlfriend",
+    trailerUrl: "https://www.youtube.com/embed/KbSGOhnl9aY",
   },
   {
     id: 23,
@@ -537,11 +872,23 @@ export const movies: Movie[] = [
     runtimeMinutes: 95,
     streamingPlatforms: [StreamingPlatform.AmazonVideo, StreamingPlatform.Tubi],
     comments: [
-      createComment(23, 1, 2, "2025-11-04T09:26:00Z", "The horror setup becomes an interesting way to explore stigma."),
-      createComment(23, 2, 3, "2026-06-19T18:39:00Z", "More of a tense character drama than a conventional outbreak movie."),
+      createComment(
+        23,
+        1,
+        2,
+        "2025-11-04T09:26:00Z",
+        "The horror setup becomes an interesting way to explore stigma.",
+      ),
+      createComment(
+        23,
+        2,
+        3,
+        "2026-06-19T18:39:00Z",
+        "More of a tense character drama than a conventional outbreak movie.",
+      ),
     ],
     posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=The+Cured",
-    trailerUrl: "https://www.youtube.com/embed/1jM2U1bA1Y4",
+    trailerUrl: "https://www.youtube.com/embed/fSutgzDY_I4",
   },
   {
     id: 24,
@@ -555,12 +902,28 @@ export const movies: Movie[] = [
     vote_average: 6.9,
     rating: ContentRating.NotRated,
     runtimeMinutes: 104,
-    streamingPlatforms: [StreamingPlatform.AmazonVideo, StreamingPlatform.AppleTV],
-    comments: [
-      createComment(24, 1, 4, "2025-11-18T12:58:00Z", "The landscape and the slow-building trust are both stunning."),
-      createComment(24, 2, 5, "2026-07-03T21:07:00Z", "A tender story about letting someone see the parts you hide."),
+    streamingPlatforms: [
+      StreamingPlatform.AmazonVideo,
+      StreamingPlatform.AppleTV,
     ],
-    posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=God%27s+Own+Country",
+    comments: [
+      createComment(
+        24,
+        1,
+        4,
+        "2025-11-18T12:58:00Z",
+        "The landscape and the slow-building trust are both stunning.",
+      ),
+      createComment(
+        24,
+        2,
+        5,
+        "2026-07-03T21:07:00Z",
+        "A tender story about letting someone see the parts you hide.",
+      ),
+    ],
+    posterUrl:
+      "https://placehold.co/500x750/d1d1ff/090934.png?text=God%27s+Own+Country",
     trailerUrl: "https://www.youtube.com/embed/6mfaVffO0h8",
   },
   {
@@ -575,13 +938,28 @@ export const movies: Movie[] = [
     vote_average: 6.7,
     rating: ContentRating.R,
     runtimeMinutes: 116,
-    streamingPlatforms: [StreamingPlatform.HBOMax, StreamingPlatform.AmazonVideo],
+    streamingPlatforms: [
+      StreamingPlatform.HBOMax,
+      StreamingPlatform.AmazonVideo,
+    ],
     comments: [
-      createComment(25, 1, 0, "2025-12-02T15:43:00Z", "The supernatural tension works so well alongside Thelma's self-discovery."),
-      createComment(25, 2, 1, "2026-07-17T10:19:00Z", "Dreamlike and eerie, with a romance at its heart."),
+      createComment(
+        25,
+        1,
+        0,
+        "2025-12-02T15:43:00Z",
+        "The supernatural tension works so well alongside Thelma's self-discovery.",
+      ),
+      createComment(
+        25,
+        2,
+        1,
+        "2026-07-17T10:19:00Z",
+        "Dreamlike and eerie, with a romance at its heart.",
+      ),
     ],
     posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=Thelma",
-    trailerUrl: "https://www.youtube.com/embed/JG2jD1Z0p7A",
+    trailerUrl: "https://www.youtube.com/embed/Mi2N-DFfe7Q",
   },
   {
     id: 26,
@@ -595,10 +973,27 @@ export const movies: Movie[] = [
     vote_average: 6.9,
     rating: ContentRating.R,
     runtimeMinutes: 87,
-    streamingPlatforms: [StreamingPlatform.FandangoAtHome, StreamingPlatform.Tubi, StreamingPlatform.Kanopy, StreamingPlatform.Hoopla],
+    streamingPlatforms: [
+      StreamingPlatform.FandangoAtHome,
+      StreamingPlatform.Tubi,
+      StreamingPlatform.Kanopy,
+      StreamingPlatform.Hoopla,
+    ],
     comments: [
-      createComment(26, 1, 2, "2025-12-16T19:02:00Z", "The energy of the performances carries every scene."),
-      createComment(26, 2, 3, "2026-08-01T13:31:00Z", "Chaotic, funny, and full of affection for its characters."),
+      createComment(
+        26,
+        1,
+        2,
+        "2025-12-16T19:02:00Z",
+        "The energy of the performances carries every scene.",
+      ),
+      createComment(
+        26,
+        2,
+        3,
+        "2026-08-01T13:31:00Z",
+        "Chaotic, funny, and full of affection for its characters.",
+      ),
     ],
     posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=Tangerine",
     trailerUrl: "https://www.youtube.com/embed/gpltOu4iUfI",
@@ -615,13 +1010,28 @@ export const movies: Movie[] = [
     vote_average: 6.2,
     rating: ContentRating.NotRated,
     runtimeMinutes: 87,
-    streamingPlatforms: [StreamingPlatform.AmazonVideo, StreamingPlatform.AppleTV],
+    streamingPlatforms: [
+      StreamingPlatform.AmazonVideo,
+      StreamingPlatform.AppleTV,
+    ],
     comments: [
-      createComment(27, 1, 4, "2026-01-05T16:25:00Z", "The one-day structure makes every reunion feel immediate."),
-      createComment(27, 2, 5, "2026-08-14T20:48:00Z", "A thoughtful look at how relationships change as we grow into ourselves."),
+      createComment(
+        27,
+        1,
+        4,
+        "2026-01-05T16:25:00Z",
+        "The one-day structure makes every reunion feel immediate.",
+      ),
+      createComment(
+        27,
+        2,
+        5,
+        "2026-08-14T20:48:00Z",
+        "A thoughtful look at how relationships change as we grow into ourselves.",
+      ),
     ],
     posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=Mutt",
-    trailerUrl: "https://www.youtube.com/embed/tO3yqf_YobY",
+    trailerUrl: "https://www.youtube.com/embed/8ZsppY8_Mm0",
   },
   {
     id: 28,
@@ -635,12 +1045,28 @@ export const movies: Movie[] = [
     vote_average: 6.3,
     rating: ContentRating.NotRated,
     runtimeMinutes: 95,
-    streamingPlatforms: [StreamingPlatform.AmazonVideo, StreamingPlatform.Kanopy],
-    comments: [
-      createComment(28, 1, 0, "2026-01-19T11:14:00Z", "A quiet, compassionate story that gives its lead room to be complex."),
-      createComment(28, 2, 1, "2026-08-27T18:55:00Z", "The Brooklyn setting feels lived-in, not just like a backdrop."),
+    streamingPlatforms: [
+      StreamingPlatform.AmazonVideo,
+      StreamingPlatform.Kanopy,
     ],
-    posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=Lingua+Franca",
+    comments: [
+      createComment(
+        28,
+        1,
+        0,
+        "2026-01-19T11:14:00Z",
+        "A quiet, compassionate story that gives its lead room to be complex.",
+      ),
+      createComment(
+        28,
+        2,
+        1,
+        "2026-08-27T18:55:00Z",
+        "The Brooklyn setting feels lived-in, not just like a backdrop.",
+      ),
+    ],
+    posterUrl:
+      "https://placehold.co/500x750/d1d1ff/090934.png?text=Lingua+Franca",
     trailerUrl: "https://www.youtube.com/embed/L0yvi3mOx60",
   },
   {
@@ -657,10 +1083,23 @@ export const movies: Movie[] = [
     runtimeMinutes: 96,
     streamingPlatforms: [StreamingPlatform.AmazonPrimeVideo],
     comments: [
-      createComment(29, 1, 2, "2026-02-11T14:39:00Z", "A joyful teen romance that lets its heroine be confident and ordinary."),
-      createComment(29, 2, 3, "2026-09-06T21:23:00Z", "I loved the gentle humor and the hopeful tone."),
+      createComment(
+        29,
+        1,
+        2,
+        "2026-02-11T14:39:00Z",
+        "A joyful teen romance that lets its heroine be confident and ordinary.",
+      ),
+      createComment(
+        29,
+        2,
+        3,
+        "2026-09-06T21:23:00Z",
+        "I loved the gentle humor and the hopeful tone.",
+      ),
     ],
-    posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=Anything%27s+Possible",
+    posterUrl:
+      "https://placehold.co/500x750/d1d1ff/090934.png?text=Anything%27s+Possible",
     trailerUrl: "https://www.youtube.com/embed/qeqvfsi7Sqs",
   },
   {
@@ -677,8 +1116,20 @@ export const movies: Movie[] = [
     runtimeMinutes: 84,
     streamingPlatforms: [StreamingPlatform.HBOMax],
     comments: [
-      createComment(30, 1, 4, "2026-02-24T17:46:00Z", "Letting the women tell their own history makes this essential viewing."),
-      createComment(30, 2, 5, "2026-09-21T12:03:00Z", "Moving, specific, and attentive to community as well as loss."),
+      createComment(
+        30,
+        1,
+        4,
+        "2026-02-24T17:46:00Z",
+        "Letting the women tell their own history makes this essential viewing.",
+      ),
+      createComment(
+        30,
+        2,
+        5,
+        "2026-09-21T12:03:00Z",
+        "Moving, specific, and attentive to community as well as loss.",
+      ),
     ],
     posterUrl: "https://placehold.co/500x750/d1d1ff/090934.png?text=The+Stroll",
     trailerUrl: "https://www.youtube.com/embed/mrLrdjKaQDE",

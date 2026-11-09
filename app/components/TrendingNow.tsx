@@ -2,8 +2,8 @@ import React from "react";
 import { movies } from "~/data/movies";
 import { mockDisplayAds } from "~/data/display-ads";
 import { Box, Chip, Grid, Typography } from "@mui/material";
-import { formatRuntime, toTitleCase } from "../../utils";
-import { PosterWithDetails } from "../PosterWithDetails";
+import { formatRuntime, toTitleCase } from "../utils";
+import { PosterWithDetails } from "./PosterWithDetails";
 
 export const TrendingNow = () => {
   const trendingMovies = movies.filter((movie) => movie.vote_average > 7);
@@ -56,12 +56,14 @@ export const TrendingNow = () => {
             </div>
             <p>{firstTrendingMovie?.overview}</p>
           </section>
+          {/* Rubric Item: Advanced HTML5 (<figure> element) */}
           <figure>
             {/* Rubric Item: Image with alt text*/}
             <img
               src={mockDisplayAds[0].imageUrl}
               alt={mockDisplayAds[0].altText}
             />
+            {/* Rubric Item: Advanced HTML5 (<figcaption> element) */}
             <figcaption>
               {/* Rubric Item: Character Formatting (Bold, Italic), Paragraph Formatting (Link)*/}
               <strong>Figure 1 </strong>

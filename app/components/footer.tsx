@@ -1,6 +1,7 @@
 import React from "react";
 export default function Footer() {
   return (
+    // Rubric Item: Advanced HTML5 (<footer> element)
     <footer className="footer">
       <h2>About us</h2>
       <p>
@@ -9,7 +10,7 @@ export default function Footer() {
         you find exactly where to watch LGBTQ+ stories in the US.
       </p>
       <br />
-      <p>&copy; 2024 The Lavender Frame</p>
+      <p>&copy; 2026 The Lavender Frame</p>
     </footer>
   );
 }
