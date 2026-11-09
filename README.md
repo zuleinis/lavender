@@ -2,6 +2,8 @@
 
 A mock queer-cinema discovery site built with HTML, CSS, React, React Router, and MUI.
 
+To find items relevant to the project rubric, see table below or search for "Rubric Item" in a text editor such as Visual Studio Code.
+
 ## Rubric Navigation
 
 | Rubric area                                      | Relevant files                                                                                                                                                                                                                                     |
